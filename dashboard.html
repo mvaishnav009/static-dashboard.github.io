@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="dash-container">
+ <section id="menu">
+     <div class="logo">
+        <i class="fas fa-user-cog"></i>
+         <h2>Dashboard</h2>
+     </div>
+     <div class="items">
+         <li><i class="fas fa-briefcase"></i><a href="dashboard.html">Overview</a></li>
+         <li><i class="fas fa-users"></i><a href="candidates.html">Candidates</a></li>
+         <li><i class="fas fa-vector-square"></i><a href="#">Requester</a></li>
+         <li><i class="fas fa-sign-out-alt"></i><a href="index.html">Sign Out</a></li>
+     </div>
+ </section>
+ <section id="interface">
+    <div class="navigation">
+        <div class="n1">
+            <div>
+                <i id="menu-btn" class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="profile">
+           <a href="#"><i class="far fa-bell"></i></a>
+           <a href="#"><i class="fas fa-user-circle"></i></a>
+        </div>
+    </div>
+     <h3 class="dash-name">Welcome User</h3>
+     <div class="values">
+         <div class="val-box">
+            <i class="fas fa-users"></i>
+            <div>
+                <h3>4,563</h3>
+                <span>Total Candidates</span>
+            </div>
+         </div>
+         <div class="val-box">
+            <i class="fas fa-vector-square"></i>
+            <div>
+                <h3>1,253</h3>
+                <span>Total Requesters</span>
+            </div>
+         </div>
+         <div class="val-box">
+            <i class="fas fa-user-circle"></i>
+            <div>
+                <h3>1,563</h3>
+                <span>Verified Candidates</span>
+            </div>
+         </div>
+         <div class="val-box">
+            <i class="fas fa-briefcase"></i>
+                <div>
+                    <h3>1,233</h3>
+                    <span>No. of Requester</span>
+                </div>
+         </div>
+         </div>
+         <div class="graphbox">
+            <div class="box"><canvas id="radarchart"></canvas></div>
+            <div class="box">
+                <canvas id="myChart"></canvas></div>
+            <div class="box"><canvas id="earning"></canvas></div>
+        </div>
+ </section>
+ 
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+<script src="chart.js"></script>
+<script>
+    $('#menu-btn').click(function(){
+        $('#menu').toggleClass("active");
+
+    })
+</script>
+</body>
+</html>

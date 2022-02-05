@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="dash-container">
+ <section id="menu">
+     <div class="logo">
+        <i class="fas fa-user-cog"></i>
+         <h2>Dashboard</h2>
+     </div>
+     <div class="items">
+         <li><i class="fas fa-briefcase"></i><a href="dashboard.html">Overview</a></li>
+         <li><i class="fas fa-users"></i><a href="candidates.html">Candidates</a></li>
+         <li><i class="fas fa-vector-square"></i><a href="#">Requester</a></li>
+         <li><i class="fas fa-sign-out-alt"></i><a href="index.html">Sign Out</a></li>
+     </div>
+ </section>
+ <section id="interface">
+     <div class="navigation">
+        <div class="n1">
+            <div>
+                <i id="menu-btn" class="fas fa-bars"></i>
+            </div>
+        </div>
+         <div class="profile">
+            <a href="#"><i class="far fa-bell"></i></a>
+            <a href="#"><i class="fas fa-user-circle"></i></a>
+         </div>
+     </div>
+     <h3 class="dash-name">All Candidates</h3>
+     <div class="board">
+         <table width="100%">
+             <thead>
+                 <tr>
+                     <td>Candidate Name</td>
+                     <td>Candidate E-mail</td>
+                     <td>Last Verified</td>
+                     <td>KED Verified</td>
+                     <td></td>
+                 </tr>
+             </thead>
+             <tbody>
+                 <tr>
+                     <td class="people">
+                         <img src="./img/01.jpg" alt="user-image">
+                         <div class="people-de">
+                             <h5>Tom Cruise</h5>
+                             <p>on 24.05.2019</p>
+                         </div>
+                     </td>
+                     <td class="people-des">
+                         <h5>tomcruise@gmail.com</h5>
+                     </td>
+                     <td class="role">
+                         <h5>May 26, 2019</h5>
+                         <p>6:30PM</p>
+                     </td>
+                     <td class="active"><p class="high">HIGH</p></td>
+                     <td class="edit"><a href="#"><i class="fas fa-ellipsis-v"></i></a></td>
+                 </tr> 
+                 <tr>
+                    <td class="people">
+                        <img src="./img/02.jpg" alt="user-image">
+                        <div class="people-de">
+                            <h5>Matt Damon</h5>
+                            <p>on 24.05.2019</p>
+                        </div>
+                    </td>
+                    <td class="people-des">
+                        <h5>Matt Damon@gmail.com</h5>
+                    </td>
+                    <td class="role">
+                        <h5>June 12, 2020</h5>
+                        <p>6:30PM</p>
+                    </td>
+                    <td class="active"><p class="low">LOW</p></td>
+                    <td class="edit"><a href="#"><i class="fas fa-ellipsis-v"></i></a></td>
+                </tr>
+                <tr>
+                    <td class="people">
+                        <img src="./img/03.jpg" alt="user-image">
+                        <div class="people-de">
+                            <h5>Robert Downey</h5>
+                            <p>on 24.05.2019</p>
+                        </div>
+                    </td>
+                    <td class="people-des">
+                        <h5>robertdowney@gmail.com</h5>
+                    </td>
+                    <td class="role">
+                        <h5>May 12, 2020</h5>
+                        <p>6:30PM</p>
+                    </td>
+                    <td class="active"><p class="high">HIGH</p></td>
+                    <td class="edit"><a href="#"><i class="fas fa-ellipsis-v"></i></a></td>
+                </tr>
+                <tr>
+                    <td class="people">
+                        <img src="./img/04.jpg" alt="user-image">
+                        <div class="people-de">
+                            <h5>Christian Bale</h5>
+                            <p>on 24.05.2019</p>
+                        </div>
+                    </td>
+                    <td class="people-des">
+                        <h5>christianbale@gmail.com</h5>
+                    </td>
+                    <td class="role">
+                        <h5>March 10, 2021</h5>
+                        <p>6:30PM</p>
+                    </td>
+                    <td class="active"><p class="normal">NORMAL</p></td>
+                    <td class="edit"><a href="#"><i class="fas fa-ellipsis-v"></i></a></td>
+                </tr>
+                <tr>
+                    <td class="people">
+                        <img src="./img/05.jpg" alt="user-image">
+                        <div class="people-de">
+                            <h5>Henry Cavil</h5>
+                            <p>on 24.05.2019</p>
+                        </div>
+                    </td>
+                    <td class="people-des">
+                        <h5>henrycavil@gmail.com</h5>
+                    </td>
+                    <td class="role">
+                        <h5>June 15, 2018</h5>
+                        <p>6:30PM</p>
+                    </td>
+                    <td class="active"><p class="high">HIGH</p></td>
+                    <td class="edit"><a href="#"><i class="fas fa-ellipsis-v"></i></a></td>
+                </tr>
+                <tr>
+                    <td class="people">
+                        <img src="./img/06.jpg" alt="user-image">
+                        <div class="people-de">
+                            <h5>Jason Statham</h5>
+                            <p>on 24.05.2019</p>
+                        </div>
+                    </td>
+                    <td class="people-des">
+                        <h5>jasonstatham@gmail.com</h5>
+                    </td>
+                    <td class="role">
+                        <h5>June 12, 2020</h5>
+                        <p>6:30PM</p>
+                    </td>
+                    <td class="active"><p class="normal">NORMAL</p></td>
+                    <td class="edit"><a href="#"><i class="fas fa-ellipsis-v"></i></a></td>
+                </tr>
+             </tbody>
+         </table>
+     </div>
+ </section>
+ 
+</div>
+<script>
+    $('#menu-btn').click(function(){
+        $('#menu').toggleClass("active");
+
+    })
+</script>
+</body>
+</html>
